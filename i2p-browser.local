@@ -1,0 +1,6 @@
+ignore include globals.local
+x11
+#net eno1
+#ip dhcp
+deterministic-shutdown
+#env http_proxy=localhost:4444
