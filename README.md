@@ -1,7 +1,7 @@
 # I2P Browser
 
 ## Dependencies
-- Python3<=
+- Python3>=
 - i2pd
 - mullvad-browser
 ## Installation:
