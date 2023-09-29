@@ -11,13 +11,12 @@ parser.add_argument('--verbose', dest='verbose', action='store_true', help='Open
 args = parser.parse_args()
 class browser():
     def browserProc():
-        subprocess.call(['i2p-browser', 'localhost:7070'])
+        subprocess.call(['mullvad-browser', 'localhost:7070'])
     browser = threading.Thread(target=browserProc)
     
 class i2p():
     def i2pProc():
-        #os.system('starti2pd')
-        subprocess.Popen(['/home/alyx/.nix-profile/bin/i2pd', '--ifname', 'tun0', '--bandwidth', 'X', '--httpproxy.outproxy', 'http://outproxy.acetone.i2p:3128', '--httpproxy.inbound.length', '1', '--httpproxy.outbound.length', '1', '--http.showTotalTCSR', '1'])
+        subprocess.Popen(['i2pd', '--ifname', 'tun0', '--bandwidth', 'X', '--httpproxy.outproxy', 'http://outproxy.acetone.i2p:3128', '--httpproxy.inbound.length', '1', '--httpproxy.outbound.length', '1', '--http.showTotalTCSR', '1'])
     i2p = threading.Thread(target=i2pProc)
 
 def startup():
