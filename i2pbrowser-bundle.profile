@@ -24,3 +24,21 @@ whitelist ${HOME}/.i2pd
 whitelist ${HOME}/.nix-profile/bin/i2pd
 whitelist ${HOME}/.nix-profile/bin/mullvad-browser
 whitelist ${HOME}/Documents/vscode/i2p-browser.py
+
+caps.drop all
+ipc-namespace
+#machine-id
+netfilter
+nodvd
+nogroups
+noinput
+nonewprivs
+noroot
+notv
+protocol unix,inet,netlink
+seccomp !chroot
+
+disable-mnt
+private-tmp
+dbus-system none
+dbus-user none
