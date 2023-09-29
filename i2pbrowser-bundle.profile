@@ -12,9 +12,9 @@ noblacklist ${HOME}/.mullvad
 noblacklist ${HOME}/.i2pd
 noblacklist ${HOME}/.nix-profile/bin/i2pd
 noblacklist ${HOME}/.nix-profile/bin/mullvad-browser
-noblacklist ${HOME}/Documents/vscode/i2p-browser.py
+noblacklist ${HOME}/.local/i2p-browser.py
 
-mkdir ${HOME}/Documents/vscode/i2p-browser.py
+mkdir ${HOME}/.local/i2p-browser.py
 mkdir ${HOME}/.mullvad
 mkdir ${HOME}/.i2pd
 mkdir ${HOME}/.nix-profile/bin/
@@ -23,7 +23,7 @@ whitelist ${HOME}/.mullvad
 whitelist ${HOME}/.i2pd
 whitelist ${HOME}/.nix-profile/bin/i2pd
 whitelist ${HOME}/.nix-profile/bin/mullvad-browser
-whitelist ${HOME}/Documents/vscode/i2p-browser.py
+whitelist ${HOME}/.local/i2p-browser.py
 
 caps.drop all
 ipc-namespace
