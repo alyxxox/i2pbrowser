@@ -1,5 +1,3 @@
-# Firejail profile alias for torbrowser-launcher
-# This file is overwritten after every install/update
 # Persistent local customizations
 
 # Persistent global definitions
