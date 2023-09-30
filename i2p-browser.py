@@ -20,7 +20,7 @@ class cliParser():
     specin = noQuotes
 
 class env_vars():
-    ifname = 'tun0' # CHANGE ME FOR DEFAULT
+    ifname = '' # CHANGE ME FOR DEFAULT
     startpage = '127.0.0.1:7070' # Standard i2pd webconsole address. Replace with any site you wish.
     bandwidth = 'O' # Standard options are: L, O, P, and X
     tor_outproxy = 'socks://localhost:9050'
