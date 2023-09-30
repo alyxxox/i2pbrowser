@@ -10,7 +10,7 @@ parser.add_argument('--leech', dest='leech', action='store_true', help='Configur
 
 args = parser.parse_args()
 class env_vars():
-    ifname = 'tun0' # Please replace tun0 with the network interface you want to connect with
+    ifname = 'eth0' # Please replace eth0 with the network interface you want to connect with (if it does not work, try eno1)
     startpage = '127.0.0.1:7070' # Standard i2pd webconsole address. Replace with any site you wish.
     bandwidth = 'O' # Standard options are: L, O, P, and X
     http_outproxy = 'http://outproxy.acetone.i2p:3128' # Change to 0.0.0.0 to ignore 
